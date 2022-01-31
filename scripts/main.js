@@ -5,8 +5,13 @@ var separatore;
 function calcolo() {
   let nome = document.getElementById("nome").value;
   let cognome = document.getElementById("cognome").value;
+  nome = nome.toLowerCase()
+  nome = nome.replace(/\s+/g, '');
+  cognome = cognome.toLowerCase()
  
-  if(nome !== "" && cognome !== "") {
+  if(separatore === undefined && termineEmail === undefined) {
+    email = "Selezionare una scuola"
+  }else if(nome !== "" && cognome !== "") {
     email =`Email: ${nome}${separatore}${cognome}${termineEmail}`
   }else {
     email = "Nome o cognome non valido"
