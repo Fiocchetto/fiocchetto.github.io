@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto email scolastica</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Generatore email scolastiche</h1>
+  <div class="dropdown">
+    <button class="dropbtn">Scuola</button>
+    <div class="dropdown-content">
+      <button onclick="iisviasilvestri301()">IIS Via Silvestri 301</button>
+      <button onclick="scuolafratellicervi()">Scuola Fratelli Cervi</button>
+    </div>
+  </div>  
+  <form onsubmit="calcolo()">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+    <label for="cognome">Cognome:</label><br>
+    <input type="text" id="cognome" name="cognome"><br><br>
+    <button type="button" onclick="calcolo()" class="vai">Vai!</button>
+  </form>
+  <p id="boh"></p>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
